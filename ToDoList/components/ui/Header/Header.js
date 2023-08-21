@@ -1,7 +1,13 @@
 import { createElement } from "../../../model/createElement.js";
 import { UiButton } from "../../uikit/ui-button/uiButton.js";
 
-export function Header({ onAddTask, onMarkEvenTask, onMarkOddTask }) {
+export function Header({
+  onAddTask,
+  onMarkEvenTask,
+  onMarkOddTask,
+  onDeleteFirstTask,
+  onDeleteLastTask,
+}) {
   return createElement(
     "div",
     {
@@ -12,10 +18,14 @@ export function Header({ onAddTask, onMarkEvenTask, onMarkOddTask }) {
       textContent: "To Do List",
     }),
     toDoInput(onAddTask),
-    headerBTNGroup(onMarkEvenTask, onMarkOddTask)
+    headerBTNGroup(
+      onMarkEvenTask,
+      onMarkOddTask,
+      onDeleteFirstTask,
+      onDeleteLastTask
+    )
   );
 }
-
 function toDoInput(onAddTask) {
   return createElement(
     "form",
@@ -46,21 +56,42 @@ function toDoInput(onAddTask) {
   );
 }
 
-function headerBTNGroup(onMarkEvenTask, onMarkOddTask) {
+function headerBTNGroup(
+  onMarkEvenTask,
+  onMarkOddTask,
+  onDeleteFirstTask,
+  onDeleteLastTask
+) {
   return createElement(
     "div",
     {
       className: "to-do_header_btn_group",
     },
     UiButton({
+      className: "to-do_header_btn",
       children: "Выделить четные задачи",
       onclick: () => onMarkEvenTask(),
       size: "lg",
       variant: "outline",
     }),
     UiButton({
+      className: "to-do_header_btn",
       children: "Выделить нечетные задачи",
       onclick: () => onMarkOddTask(),
+      size: "lg",
+      variant: "outline",
+    }),
+    UiButton({
+      className: "to-do_header_btn",
+      children: "Удалить перую задачу",
+      onclick: () => onDeleteFirstTask(),
+      size: "lg",
+      variant: "outline",
+    }),
+    UiButton({
+      className: "to-do_header_btn",
+      children: "Удалить последнюю задачу",
+      onclick: () => onDeleteLastTask(),
       size: "lg",
       variant: "outline",
     })
