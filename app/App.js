@@ -26,19 +26,19 @@ export function App({ store }) {
         onAddTask: (title) => store.onAddTask(title),
         onMarkEvenTask: () => store.onMarkEvenTask(),
         onMarkOddTask: () => store.onMarkOddTask(),
+        onDeleteFirstTask: () => store.onDeleteFirstTask(),
+        onDeleteLastTask: () => store.onDeleteLastTask(),
       }),
       children:
         list.length > 0
           ? ToDoList(
               sortByStatus(list).map((task, index) => {
-                // const markTask = isMarkTask(index);
                 return ToDoListItem({
                   task,
                   onDelete: (id) => store.onDelete(id),
                   onMarkTaskComplete: (id) => store.onMarkTaskComplete(id),
                   index,
                   isMarkTask: isMarkTask(index),
-                  // markTask,
                 });
               })
             )

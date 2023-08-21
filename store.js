@@ -70,6 +70,24 @@ class Store {
     });
   };
 
+  onDeleteFirstTask = () => {
+    let newList = this.getState().list;
+    newList.shift();
+    this.setState({
+      ...this.getState(),
+      list: newList,
+    });
+  };
+
+  onDeleteLastTask = () => {
+    let newList = this.getState().list;
+    newList.pop();
+    this.setState({
+      ...this.getState(),
+      list: newList,
+    });
+  };
+
   onAddTask(title) {
     this.setState({
       ...this.getState(),

@@ -22,8 +22,8 @@ export function UiButton({
   type = "button ",
 }) {
   const buttonClassName = clsx(
-    className,
     "to-do_button",
+    className,
     {
       md: "md_btn",
       lg: "lg_btn",
