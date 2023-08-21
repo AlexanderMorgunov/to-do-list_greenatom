@@ -1,0 +1,11 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.to-do-list_empty {
+  width: 100%;
+  text-align: center;
+  color: var(--PrimaryColor);
+  font-size: 32px;
+}

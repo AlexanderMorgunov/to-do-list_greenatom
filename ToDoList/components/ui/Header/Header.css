@@ -1,0 +1,28 @@
+.to-do_header_title {
+  margin-top: 10px;
+  font-size: 30px;
+  color: var(--PrimaryColor);
+  text-align: center;
+}
+.to-do_header_form {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.to-do_input {
+  height: 34px;
+  width: 200px;
+  text-align: center;
+  border: 2px solid var(--PrimaryColor);
+  border-radius: 5px;
+  color: var(--PrimaryColor);
+  width: calc(100% - 220px);
+  font-size: 20px;
+}
+.to-do_header_form_submit {
+  margin: 0;
+}
+.to-do_header_btn_group {
+  display: flex;
+  justify-content: center;
+}

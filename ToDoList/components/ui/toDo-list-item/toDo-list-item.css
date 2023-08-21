@@ -1,0 +1,27 @@
+.to-do-list-item_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid var(--PrimaryColor);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  transition: all 0.5s;
+}
+.to-do-list-item_wrapper_oddTask {
+  background-color: var(--OddTaskColor);
+}
+.to-do-list-item_wrapper_evenTask {
+  background-color: var(--EvenTaskColor);
+}
+.to-do-list-item_wrapper:hover {
+  transform: scale(1.01);
+  color: var(--PrimaryColor);
+}
+.to-do-list-item_btn_group {
+  display: flex;
+}
+.to-do-list-item_title_complete {
+  text-decoration: line-through;
+}

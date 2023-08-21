@@ -1,0 +1,42 @@
+.to-do_button {
+  height: 10px;
+  min-width: 20px;
+  border: 2px solid #4caf50;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  font-family: var(--fontFamily);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  margin: 5px;
+}
+.to-do_button:hover {
+  transform: scale(1.05);
+}
+
+.md_btn {
+  padding: 12px 24px;
+  font-size: 16px;
+}
+.lg_btn {
+  padding: 15px 32px;
+  font-size: 18px;
+}
+.primary_btn {
+  background-color: var(--PrimaryColor);
+  color: white;
+}
+.outline_btn {
+  background-color: var(--AdditionColor);
+  color: var(--PrimaryColor);
+}
+.outline_btn:hover {
+  background-color: var(--PrimaryColor);
+  color: var(--AdditionColor);
+}
+.primary_btn:hover {
+  background-color: var(--AdditionColor);
+  color: var(--PrimaryColor);
+}

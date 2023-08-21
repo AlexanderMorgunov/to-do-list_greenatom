@@ -1,0 +1,12 @@
+@import url("../ToDoList/components/uikit/ui-button/uiButton.css");
+@import url("./constans.css");
+@import url("../app/App.css");
+@import url("../ToDoList/components/ui/ToDoListLayout/ToDoListLayout.css");
+@import url("../ToDoList/components/ui/Header/Header.css");
+@import url("../ToDoList/components/ui/toDo-list-item/toDo-list-item.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--fontFamily);
+}

@@ -1,0 +1,6 @@
+.to-do-list_layout {
+  width: 1024px;
+  min-height: 100vh;
+  background-color: var(--AdditionColor);
+  padding: 20px;
+}

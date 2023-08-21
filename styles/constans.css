@@ -1,0 +1,8 @@
+:root {
+  --fontFamily: Geologica;
+  --DarkGrayColor: rgb(114, 114, 114);
+  --PrimaryColor: rgb(76, 175, 80);
+  --AdditionColor: rgb(248, 248, 255);
+  --EvenTaskColor: rgb(255, 246, 175);
+  --OddTaskColor: rgb(255, 185, 170);
+}
